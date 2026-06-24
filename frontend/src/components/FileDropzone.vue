@@ -18,6 +18,7 @@
       <!-- File input -->
       <input
         ref="fileInput"
+        :key="'fileInput'"
         type="file"
         accept=".aab"
         class="hidden"

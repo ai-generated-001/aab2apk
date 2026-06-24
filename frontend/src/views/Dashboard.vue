@@ -46,6 +46,7 @@
           
           <div 
             ref="terminalBody"
+            :key="'terminalBody'"
             class="bg-slate-950/80 border border-slate-900 rounded-xl p-4 overflow-y-auto max-h-[250px] font-mono text-[11px] leading-relaxed text-slate-300 shadow-inner"
           >
             <div 
