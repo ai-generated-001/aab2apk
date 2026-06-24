@@ -22,6 +22,7 @@
         accept=".aab"
         class="hidden"
         @change="handleFileSelect"
+        @click.stop
       />
 
       <!-- Icon & Text -->
@@ -69,7 +70,9 @@ const fileInput = ref(null);
 const validationError = ref(null);
 
 const triggerFileInput = () => {
-  fileInput.value.click();
+  if (fileInput.value) {
+    fileInput.value.click();
+  }
 };
 
 const handleFileSelect = (event) => {
